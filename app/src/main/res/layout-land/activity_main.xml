@@ -7,7 +7,6 @@
     android:background="@drawable/back"
     tools:context=".MainActivity">
 
-
     <TextView
         android:id="@+id/text_info"
         android:layout_width="0dp"
@@ -17,7 +16,7 @@
         android:text="Hello World!"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -40,7 +39,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/percent"
-        android:textSize="30sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toStartOf="@id/C"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/result" />
@@ -50,7 +49,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/c"
-        android:textSize="30sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toStartOf="@id/del"
         app:layout_constraintStart_toEndOf="@+id/percent"
         app:layout_constraintTop_toBottomOf="@id/result" />
@@ -60,7 +59,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/del"
-        android:textSize="30sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toStartOf="@id/dele"
         app:layout_constraintStart_toEndOf="@+id/C"
         app:layout_constraintTop_toBottomOf="@id/result" />
@@ -70,7 +69,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/dele"
-        android:textSize="30sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/del"
         app:layout_constraintTop_toBottomOf="@id/result" />
@@ -80,7 +79,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/_7"
-        android:textSize="30sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toStartOf="@id/_8"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/percent" />
@@ -90,7 +89,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/_8"
-        android:textSize="30sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toStartOf="@id/_9"
         app:layout_constraintStart_toEndOf="@id/_7"
         app:layout_constraintTop_toBottomOf="@id/percent" />
@@ -100,7 +99,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/_9"
-        android:textSize="30sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toStartOf="@id/umno"
         app:layout_constraintStart_toEndOf="@id/_8"
         app:layout_constraintTop_toBottomOf="@id/percent" />
@@ -110,7 +109,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/umno"
-        android:textSize="30sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/_9"
         app:layout_constraintTop_toBottomOf="@id/percent" />
@@ -120,7 +119,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/_4"
-        android:textSize="30sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toStartOf="@id/_5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/_7" />
@@ -130,7 +129,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/_5"
-        android:textSize="30sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toStartOf="@id/_6"
         app:layout_constraintStart_toEndOf="@id/_4"
         app:layout_constraintTop_toBottomOf="@id/_7" />
@@ -140,7 +139,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/_6"
-        android:textSize="30sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toStartOf="@id/minus"
         app:layout_constraintStart_toEndOf="@id/_5"
         app:layout_constraintTop_toBottomOf="@id/_7" />
@@ -150,7 +149,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/minus"
-        android:textSize="30sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/_6"
         app:layout_constraintTop_toBottomOf="@id/_7" />
@@ -160,7 +159,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/_1"
-        android:textSize="30sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toStartOf="@id/_2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/_4" />
@@ -170,7 +169,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/_2"
-        android:textSize="30sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toStartOf="@id/_3"
         app:layout_constraintStart_toEndOf="@id/_1"
         app:layout_constraintTop_toBottomOf="@id/_4" />
@@ -180,7 +179,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/_3"
-        android:textSize="30sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toStartOf="@id/plus"
         app:layout_constraintStart_toEndOf="@id/_2"
         app:layout_constraintTop_toBottomOf="@id/_4" />
@@ -190,7 +189,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/plud"
-        android:textSize="30sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/_3"
         app:layout_constraintTop_toBottomOf="@id/_4" />
@@ -200,7 +199,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/_0"
-        android:textSize="30sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toStartOf="@id/dote"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/_1" />
@@ -210,7 +209,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/dote"
-        android:textSize="30sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toStartOf="@id/ravno"
         app:layout_constraintStart_toEndOf="@id/_0"
         app:layout_constraintTop_toBottomOf="@id/_1" />
@@ -220,7 +219,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/ravno"
-        android:textSize="30sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/dote"
         app:layout_constraintTop_toBottomOf="@id/_1" />

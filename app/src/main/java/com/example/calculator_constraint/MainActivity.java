@@ -37,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
         InitBtn0();
         InitBtnDote();
         InitBtnRavno();
+
+
     }
 
 
@@ -218,7 +220,7 @@ public class MainActivity extends AppCompatActivity {
         btn_dote.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                textWork.setText(String.format("%d", "."));
+                textWork.setText(String.format("%s", "."));
             }
         });
     }
