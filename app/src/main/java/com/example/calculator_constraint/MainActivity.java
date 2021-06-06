@@ -1,6 +1,7 @@
 package com.example.calculator_constraint;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
@@ -11,7 +12,9 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-
+    static {
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_AUTO_BATTERY);
+    }
     private TextView textWork;
     private TextView resultWork;
     private double result = 0;
