@@ -8,15 +8,21 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity {
 
     private TextView textWork;
+    private TextView resultWork;
+    private double result = 0;
+    private ArrayList<String> operation = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         textWork = findViewById(R.id.text_info);
+        resultWork = findViewById(R.id.result);
 
         InitBtnPercent();
         InitBtnC();
@@ -38,9 +44,13 @@ public class MainActivity extends AppCompatActivity {
         InitBtnDote();
         InitBtnRavno();
 
-
     }
 
+    private void ViewArray(ArrayList<String> operation){
+        for (int i = 0; i < operation.size(); i++){
+            textWork.setText(operation.get(i));
+        }
+    }
 
     private void InitBtnPercent(){
         Button btn_percent = findViewById(R.id.percent);
@@ -57,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
         btn_c.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                textWork.setText(String.format("%s", "элемент назад"));
+                textWork.setText(String.format("%d", 0));
             }
         });
     }
@@ -230,7 +240,7 @@ public class MainActivity extends AppCompatActivity {
         btn_ravno.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                textWork.setText(String.format("%s", "="));
+                resultWork.setText(String.format("= %s", result));
             }
         });
     }
