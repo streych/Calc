@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="10sp"
         android:layout_marginRight="10sp"
-        android:text="Hello World!"
+        android:text=""
         android:textSize="@dimen/sp_30"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
