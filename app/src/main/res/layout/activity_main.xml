@@ -7,6 +7,16 @@
     android:background="@drawable/back"
     tools:context=".MainActivity">
 
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/thema"
+        android:text="@string/night"
+        android:textSize="@dimen/sp_30"
+        android:layout_marginStart="@dimen/sp_30"
+        android:layout_marginTop="@dimen/sp_30"/>
 
     <TextView
         android:id="@+id/text_info"
