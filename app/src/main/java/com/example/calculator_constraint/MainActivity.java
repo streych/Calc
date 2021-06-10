@@ -6,7 +6,6 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.app.AppCompatDelegate;
 
 /**
  * 1. Создайте активити с настройками, где включите выбор темы приложения.
@@ -14,9 +13,7 @@ import androidx.appcompat.app.AppCompatDelegate;
  * 3. * Сделайте интент-фильтр для запуска калькулятора извне, а также напишите тестовое приложение, запускающее приложение-калькулятор
  */
 public class MainActivity extends AppCompatActivity {
-    static {
-        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_AUTO_BATTERY);
-    }
+
 
     private TextView textWork;
     private boolean flag = false;
@@ -32,8 +29,11 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+        setTheme(R.style.Theme_Calculator_Constraint_Night);
         setContentView(R.layout.activity_main);
+        btnRecreate();
+
+        super.onCreate(savedInstanceState);
 
         textWork = findViewById(R.id.text_info);
         resultWork = findViewById(R.id.result);
@@ -48,6 +48,16 @@ public class MainActivity extends AppCompatActivity {
         deleBtn();
         persentBtn();
         doteBtn();
+    }
+
+    private void btnRecreate() {
+        Button btn = findViewById(R.id.thema);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                recreate();
+            }
+        });
     }
 
     private void updateText(String strAdd) {
@@ -189,7 +199,6 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     String num = btn.getText().toString();
-                    //textWork.setText(num);
                     updateText(num);
                 }
             });
