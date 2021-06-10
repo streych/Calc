@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         textWork = findViewById(R.id.text_info);
         resultWork = findViewById(R.id.result);
 
+
         setNumberButtonsListeners();
         clearButtonListener();
         moveBackBtnListener();
